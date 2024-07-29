@@ -1,0 +1,26 @@
+.Main{
+    display:grid; 
+    grid-template-columns:auto auto auto auto;
+    margin:2vw;
+    gap:1vw;
+    justify-content:space-around;
+}
+.Card{
+    width:19rem;
+    padding:1vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border:1px solid black;
+}
+.Title{
+    text-align: center;
+    font-size: 0.4vw;
+}
+.Button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:1.3vw;
+}

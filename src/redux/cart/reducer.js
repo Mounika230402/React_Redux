@@ -1,15 +1,14 @@
 const initialState={
-    products:[],
+    data:[],
 };
 export const cartReducer=(state=initialState,action)=>{
     switch(action.type){
         case "ADD_To_CART":
-            return{...state,products:[...state.products,action.payload]};
+            console.log("reducer")
+            return{...state,data:[...state.data,action.payload]};
         case "REMOVE_FROM_CART":
-            const newFiteredData=state.products.filter(each=>each.id!==action.payload)
-            return {...state,products:newFiteredData};
-            case "ADD":
-                return{...state,products:[...state.products,action.payload]};
+            const newFiteredData=state.data.filter(each=>each.id!==action.payload)
+            return {...state,data:newFiteredData};
         default:
             return state;
     }
